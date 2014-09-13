@@ -3,7 +3,7 @@
 // @namespace   Tieba_Recent_Emoi
 // @description 贴吧最近使用表情
 // @include     http://tieba.baidu.com/*
-// @version     1.1
+// @version     1.1.1
 // @require http://static.hdslb.com/js/jquery.min.js
 // @updateURL   https://nightlyfantasy.github.io/Tieba_Recent_Emoi/Tieba_Recent_Emoi.meta.js
 // @downloadURL https://nightlyfantasy.github.io/Tieba_Recent_Emoi/Tieba_Recent_Emoi.user.js
@@ -146,7 +146,7 @@ function display_lzl_emot_div() {
 <table id="lzl_emoi_tab" class="s_layer_table" style="border-collapse:collapse;" align="center" border="1" bordercolor="#e3e3e3" cellpadding="1" cellspacing="1">\
 </table></div></div></div></div></div>\
 <div style="top: -8px; left: 139px; position: absolute;" class="edui-popup-caret up"></div></div></div>';
-	$('.edui-container').after(div); //插入可视化界面
+	$('.lzl_editor_container .edui-container').after(div); //插入可视化界面
 	$('.lzl_panel_btn').click(function() {
 		$('.lzlRecentImgDiv').hide()
 	}); //点击表情按钮后隐藏
